@@ -86,3 +86,47 @@ function resolveDataUrl() {
     });
 }
 generateQRCode();
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Add loaded class to body for reveal animation on load
+    document.body.classList.add("loaded");
+
+    // Add event listener for scroll to reveal animation
+    window.addEventListener("scroll", revealOnScroll);
+});
+
+function revealOnScroll() {
+    var elements = document.querySelectorAll(
+        "header h1, header p, .left-sidebar h2, .left-sidebar p, .right-sidebar h2, .right-sidebar ul li"
+    );
+
+    elements.forEach(function (element) {
+        if (isElementInViewport(element)) {
+            element.classList.add("visible");
+        }
+    });
+}
+
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Trigger initial reveal on page load
+revealOnScroll();
+
+// Add hover effect to the button
+const btn = document.querySelector(".btn");
+
+btn.addEventListener("mouseover", function () {
+    btn.classList.add("hovered");
+});
+
+btn.addEventListener("mouseout", function () {
+    btn.classList.remove("hovered");
+});
