@@ -137,3 +137,62 @@ a{
         margin-top: 0.7rem;
     }
 }
+
+/* Existing styles remain unchanged */
+
+/* Add these styles for text animation */
+header h1,
+header p,
+.left-sidebar h2,
+.left-sidebar p,
+.right-sidebar h2,
+.right-sidebar ul li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+/* Hover effect for the button */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.3s;
+}
+
+.btn:hover:after {
+    left: 100%;
+}
+
+/* Add these styles to reveal text on scroll */
+body.loaded header h1,
+body.loaded header p,
+body.loaded .left-sidebar h2,
+body.loaded .left-sidebar p,
+body.loaded .right-sidebar h2,
+body.loaded .right-sidebar ul li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Additional styles for reveal animation */
+body {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Add these styles to reveal the body on load */
+body.loaded {
+    opacity: 1;
+}
+
+/* Existing media queries remain unchanged */
