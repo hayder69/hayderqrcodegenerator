@@ -6,72 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title> Qr Code Generator | HayderBelguith</title>
+    <title>QR Code Generator | HayderBelguith</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3626429393920724"
      crossorigin="anonymous"></script>
 </head>
 
 <body>
-        <div class="container">
+
+    <div class="container">
         <aside class="left-sidebar">
             <h2>About QR Codes</h2>
             <p>
                 QR codes, short for Quick Response codes, are two-dimensional barcodes that store data. They can be
                 scanned using a QR code reader or a smartphone camera equipped with the necessary software.
             </p>
+            <p>
+                QR codes are widely used for various purposes, including product packaging, advertising, and mobile
+                payments. They provide a quick and efficient way to access information with a simple scan.
+            </p>
         </aside>
 
         <main>
-        <header>
-        <h1>Welcome to the QR Code Generator</h1>
-        <p>Create custom QR codes with ease!</p>
-    </header>
+            <header>
+                <h1>Welcome to the QR Code Generator</h1>
+                <p>Create custom QR codes with ease!</p>
+            </header>
 
-    <section>
+            <section>
                 <p>
-            This QR Code Generator allows you to quickly generate QR codes for various purposes. Choose your desired
-            colors, size, and input text to create a customized QR code that suits your needs.
-        </p>
+                    This QR Code Generator allows you to quickly generate QR codes for various purposes. Choose your
+                    desired colors, size, and input text to create a customized QR code that suits your needs.
+                </p>
 
-        <p>
-            Share your generated QR code or download it for offline use. Use the color pickers to customize the light
-            and dark colors of your QR code, and select the size that fits your design requirements.
-        </p>
-        <div class="row">
-            <input type="color" class="light" value="#ffffff">
-            <input type="color" class="dark">
-            <select class="sizes">
-                <option value="100">100×100</option>
-                <option value="200">200×200</option>
-                <option value="300">300×300</option>
-                <option selected value="400">400×400</option>
-                <option value="500">500×500</option>
-                <option value="600">600×600</option>
-                <option value="700">700×700</option>
-                <option value="800">800×800</option>
-                <option value="900">900×900</option>
-                <option value="1000">1000×1000</option>
-            </select>
-        </div>
-        <input type="text" class="qr-text" placeholder="Enter QR Text">
-        <div id="qr-code"></div>
-        
-        <p>
-            After customizing your QR code, you can download it by clicking the "Download" button or share it directly
-            using the "Share" button.
-        </p>
-        <div class="action-container">
-            <a href="#" class="download btn" download="QRCode">
-                <span>Download</span>
-                <img src="download.svg" alt="">
-            </a>
-            <button class="btn share-btn">
-                <span>Share</span>
-                <img src="share.svg" alt="">
-            </button>
-        </div>
-    </section>
-     </main>
+                <p>
+                    Share your generated QR code or download it for offline use. Use the color pickers to customize the
+                    light and dark colors of your QR code, and select the size that fits your design requirements.
+                </p>
+
+                <div class="row">
+                    <input type="color" class="light" value="#ffffff">
+                    <input type="color" class="dark">
+                    <select class="sizes">
+                        <option value="100">100×100</option>
+                        <option value="200">200×200</option>
+                        <option value="300">300×300</option>
+                        <option selected value="400">400×400</option>
+                        <option value="500">500×500</option>
+                        <option value="600">600×600</option>
+                        <option value="700">700×700</option>
+                        <option value="800">800×800</option>
+                        <option value="900">900×900</option>
+                        <option value="1000">1000×1000</option>
+                    </select>
+                </div>
+
+                <input type="text" class="qr-text" placeholder="Enter QR Text">
+
+                <div id="qr-code"></div>
+
+                <p>
+                    After customizing your QR code, you can download it by clicking the "Download" button or share it
+                    directly using the "Share" button.
+                </p>
+
+                <div class="action-container">
+                    <a href="#" class="download btn" download="QRCode">
+                        <span>Download</span>
+                        <img src="download.svg" alt="">
+                    </a>
+                    <button class="btn share-btn">
+                        <span>Share</span>
+                        <img src="share.svg" alt="">
+                    </button>
+                </div>
+            </section>
+        </main>
 
         <aside class="right-sidebar">
             <h2>Tips for QR Codes</h2>
@@ -91,5 +100,3 @@
 </body>
 
 </html>
-
-
