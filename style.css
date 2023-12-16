@@ -13,6 +13,9 @@ body{
     justify-content: center;
     color: #fff;
 }
+.container {
+    padding-top: 20px; /* Add padding to the top */
+}
 
 input[type="color"]{
     border: none;
